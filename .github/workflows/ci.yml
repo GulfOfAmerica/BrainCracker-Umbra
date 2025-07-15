@@ -1,0 +1,12 @@
+name: Chaos CI
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with: { python-version: '3.12' }
+    - run: pip install -r requirements.txt
+    - run: python brain_cracker.py --wordlist wordlist_example.txt --threads 1
