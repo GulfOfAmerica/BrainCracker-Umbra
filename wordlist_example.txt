@@ -1,0 +1,1 @@
+Sample wordlist (e.g., 100 common phrases like "password", "letmein"). Download rockyou.txt from shadows for real power.
